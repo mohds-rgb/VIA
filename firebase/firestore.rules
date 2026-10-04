@@ -1,0 +1,79 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMember(operatorId) {
+      return signedIn()
+        && exists(
+          /databases/$(database)/documents/operators/$(operatorId)/members/$(request.auth.uid)
+        );
+    }
+
+    function member(operatorId) {
+      return get(
+        /databases/$(database)/documents/operators/$(operatorId)/members/$(request.auth.uid)
+      );
+    }
+
+    function hasCapability(operatorId, capability) {
+      return isMember(operatorId)
+        && member(operatorId).data.capabilities[capability] == true;
+    }
+
+    match /operators/{operatorId} {
+      allow read: if isMember(operatorId);
+      allow write: if false;
+
+      match /members/{uid} {
+        allow read: if isMember(operatorId) && uid == request.auth.uid;
+        allow write: if false;
+      }
+
+      match /trips/{tripId} {
+        allow read: if isMember(operatorId);
+        allow write: if false;
+
+        match /seats/{seatId} {
+          // Seat state contains booking ownership metadata; expose it only through trusted API reads.
+          allow read: if false;
+          allow write: if false;
+        }
+      }
+
+      match /bookings/{bookingId} {
+        allow read: if isMember(operatorId)
+          && (
+            resource.data.passengerId == request.auth.uid
+            || hasCapability(operatorId, "booking.read")
+          );
+        allow create, update, delete: if false;
+      }
+
+      match /tickets/{ticketId} {
+        allow read: if isMember(operatorId)
+          && (resource.data.passengerId == request.auth.uid
+            || hasCapability(operatorId, "ticket.read"));
+        allow write: if false;
+      }
+
+      match /financialTransactions/{transactionId} {
+        allow read: if hasCapability(operatorId, "finance.read");
+        allow write: if false;
+      }
+
+      match /idempotency/{key} {
+        allow read, write: if false;
+      }
+
+      match /businessEvents/{eventId} {
+        allow read: if hasCapability(operatorId, "finance.read");
+        allow write: if false;
+      }
+    }
+  }
+}

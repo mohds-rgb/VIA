@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -eu
+GRADLE_VERSION="8.9"
+GRADLE_HOME="${HOME}/.gradle/via-wrapper/gradle-${GRADLE_VERSION}"
+GRADLE_BIN="${GRADLE_HOME}/bin/gradle"
+
+if [ ! -x "${GRADLE_BIN}" ]; then
+  echo "[VIA] Pinned Gradle ${GRADLE_VERSION} was not found. On Windows use gradlew.bat; on Unix install Gradle 8.9 in ~/.gradle/via-wrapper/gradle-${GRADLE_VERSION}."
+  exit 1
+fi
+
+exec "${GRADLE_BIN}" "$@"

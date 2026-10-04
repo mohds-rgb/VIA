@@ -1,0 +1,8 @@
+[
+  {"id":"demo-passenger-ali","displayName":"Ali Hassan","persona":"Passenger"},
+  {"id":"demo-driver-omar","displayName":"Omar Khaled","persona":"Driver"},
+  {"id":"demo-operator","displayName":"Diamond Operations","persona":"Operator"},
+  {"id":"demo-owner","displayName":"Diamond Owner","persona":"Owner"},
+  {"id":"demo-finance","displayName":"Finance Desk","persona":"Finance"},
+  {"id":"demo-admin","displayName":"Moha Admin","persona":"Admin"}
+]

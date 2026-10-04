@@ -1,0 +1,20 @@
+{
+  "operatorId": "diamond-travel",
+  "displayName": "Diamond Travel",
+  "country": "SY",
+  "serviceArea": "Southern Syria",
+  "currency": "SYP",
+  "corridor": {
+    "origin": "Damascus",
+    "destination": "Daraa University Area"
+  },
+  "fleet": {
+    "busCount": 21,
+    "seatsPerBus": 50
+  },
+  "farePolicy": {
+    "oneWay": 50,
+    "roundTrip": 90
+  },
+  "schedulePolicy": "Approximate hourly departures and returns; exact times are operator-managed."
+}

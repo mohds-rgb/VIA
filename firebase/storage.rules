@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /operators/{operatorId}/{allPaths=**} {
+      allow read: if request.auth != null
+        && firestore.exists(
+          /databases/(default)/documents/operators/$(operatorId)/members/$(request.auth.uid)
+        );
+      allow write: if false;
+    }
+  }
+}

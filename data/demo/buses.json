@@ -1,0 +1,212 @@
+[
+  {
+    "busId": "DIA-01",
+    "registration": "DM-501",
+    "displayName": "Diamond 01",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-02",
+    "registration": "DM-502",
+    "displayName": "Diamond 02",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-03",
+    "registration": "DM-503",
+    "displayName": "Diamond 03",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-04",
+    "registration": "DM-504",
+    "displayName": "Diamond 04",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-05",
+    "registration": "DM-505",
+    "displayName": "Diamond 05",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-06",
+    "registration": "DM-506",
+    "displayName": "Diamond 06",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-07",
+    "registration": "DM-507",
+    "displayName": "Diamond 07",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-08",
+    "registration": "DM-508",
+    "displayName": "Diamond 08",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-09",
+    "registration": "DM-509",
+    "displayName": "Diamond 09",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-10",
+    "registration": "DM-510",
+    "displayName": "Diamond 10",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-11",
+    "registration": "DM-511",
+    "displayName": "Diamond 11",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-12",
+    "registration": "DM-512",
+    "displayName": "Diamond 12",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-13",
+    "registration": "DM-513",
+    "displayName": "Diamond 13",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-14",
+    "registration": "DM-514",
+    "displayName": "Diamond 14",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-15",
+    "registration": "DM-515",
+    "displayName": "Diamond 15",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-16",
+    "registration": "DM-516",
+    "displayName": "Diamond 16",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-17",
+    "registration": "DM-517",
+    "displayName": "Diamond 17",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-18",
+    "registration": "DM-518",
+    "displayName": "Diamond 18",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-19",
+    "registration": "DM-519",
+    "displayName": "Diamond 19",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-20",
+    "registration": "DM-520",
+    "displayName": "Diamond 20",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  },
+  {
+    "busId": "DIA-21",
+    "registration": "DM-521",
+    "displayName": "Diamond 21",
+    "capacity": 50,
+    "seatLayout": "2x2",
+    "status": "active",
+    "operatorId": "diamond-travel",
+    "source": "demo-portfolio"
+  }
+]

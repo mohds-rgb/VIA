@@ -1,0 +1,14 @@
+{
+  "scenario": "passenger books two seats on a Diamond Travel trip",
+  "passengerId": "demo-passenger-ali",
+  "operatorId": "diamond-travel",
+  "tripId": "demo-dia-01-outbound",
+  "seatIds": ["A01", "A02"],
+  "fare": {"amount": 100, "currency": "SYP"},
+  "paymentMethod": "cash",
+  "expectedLifecycle": [
+    "held",
+    "awaitingCashConfirmation",
+    "confirmed"
+  ]
+}

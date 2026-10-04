@@ -1,0 +1,8 @@
+{
+  "id": "booking_fixture_1",
+  "operatorId": "operator_fixture",
+  "passengerId": "passenger_fixture",
+  "tripId": "trip_fixture",
+  "seatIds": ["12A"],
+  "status": "held"
+}

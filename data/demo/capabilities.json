@@ -1,0 +1,35 @@
+{
+  "passenger": [
+    "trip.read",
+    "booking.read",
+    "booking.create",
+    "ticket.read"
+  ],
+  "driver": [
+    "trip.read",
+    "booking.read",
+    "boarding.manage"
+  ],
+  "operator": [
+    "trip.read",
+    "booking.read",
+    "booking.manage",
+    "ticket.read"
+  ],
+  "owner": [
+    "trip.read",
+    "booking.read",
+    "ticket.read",
+    "finance.read"
+  ],
+  "finance": [
+    "trip.read",
+    "finance.read"
+  ],
+  "admin": [
+    "trip.read",
+    "booking.read",
+    "ticket.read",
+    "finance.read"
+  ]
+}
